@@ -1,0 +1,11 @@
+<div class="card-block" ng-show="product.images.length">
+  <div class="card-block">
+    <img ng-src="{{product.images[gallery.current]}}" class="main-image"/>
+  </div>
+  <ul class="card-block">
+    <li ng-repeat="image in product.images">
+      <img class="small-image pull-xs-left img-btm" ng-src="{{image}}" />
+    </li>
+  </ul>
+
+</div>

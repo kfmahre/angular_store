@@ -1,0 +1,24 @@
+<!-- Tabs Go Here -->
+<section class="card-block">
+  <div class="card-block">
+  <ul class="nav nav-inline panel-controller">
+    <li class="nav-item" ng-class="{ active:tab.isSet(1) }">
+      <a href ng-click="tab.setTab(1)" class="nav-link bg-amber-A700">Description</a>
+    </li>
+    <li class="nav-item" ng-class="{ active:tab.isSet(2) }">
+      <a href ng-click="tab.setTab(2)" class="nav-link bg-amber-A700">Specs</a>
+    </li>
+    <li class="nav-item" ng-class="{ active:tab.isSet(3) }">
+      <a href ng-click="tab.setTab(3)" class="nav-link bg-amber-A700">Reviews</a>
+    </li>
+  </ul>
+  </div>
+  <!--  Description Tab's Content  -->
+  <div class="tab-content">
+    <product-description ng-show="tab.isSet(1)"></product-description>
+  <!--  Spec Tab's Content  -->
+      <product-specs ng-show="tab.isSet(2)"></product-specs>
+  <!--  Review Tab's Content  -->
+      <product-reviews ng-show="tab.isSet(3)"></product-reviews>
+  </div>
+</section>
